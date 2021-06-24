@@ -1,0 +1,38 @@
+.btn-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+
+  .btn-list-item {
+    margin-right: 8px;
+  }
+}
+
+.btn-list-item-prtf {
+  height: 38px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: var(--font-heading-color);
+  background: var(--btn-portfolio-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: none;
+  border: 1px solid var(--main-bcgrnd-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: var(--main-bcgrnd-color);
+    background: var(--font—btn-accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}
+
+/* END PORTFOLIO BUTTON */
