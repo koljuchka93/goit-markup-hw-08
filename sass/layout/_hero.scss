@@ -1,4 +1,4 @@
-/* SECTION ONE - HERO */
+// mobile
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
@@ -7,7 +7,7 @@
       var(--backgroung-image-overlay),
       var(--backgroung-image-overlay)
     ),
-    url("../images/1x-mob-img.webp");
+    url("../images/1x-tab-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -32,7 +32,64 @@
   color: var(--main-bcgrnd-color);
 }
 
-// 1200+
+@media (min-device-pixel-ratio: 2) and (min-width: 320px),
+  (min-resolution: 192dpi) and (min-width: 320px),
+  (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--backgroung-image-overlay),
+        var(--backgroung-image-overlay)
+      ),
+      url("../images/2x-mob-img.jpg");
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--backgroung-image-overlay),
+        var(--backgroung-image-overlay)
+      ),
+      url("../images/1x-tab-img.jpg");
+  }
+}
+
+/* tab 2x и 768+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 480px),
+  (min-resolution: 192dpi) and (min-width: 480px),
+  (min-resolution: 2dppx) and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--backgroung-image-overlay),
+        var(--backgroung-image-overlay)
+      ),
+      url("../images/2x-tab-img.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--backgroung-image-overlay),
+        var(--backgroung-image-overlay)
+      ),
+      url("../images/1x-img.jpg");
+  }
+}
+
+/* desktop 2x и 1200+ */
+@media (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        var(--backgroung-image-overlay),
+        var(--backgroung-image-overlay)
+      ),
+      url("../images/2x-img.jpg");
+  }
+}
+
+// desktop 1200+
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
