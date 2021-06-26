@@ -1,10 +1,12 @@
 .btn-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  justify-content: flex-start;
 
   .btn-list-item {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
 }
 
@@ -36,3 +38,22 @@
 }
 
 /* END PORTFOLIO BUTTON */
+// 768+
+@media screen and (min-width: 768px) {
+  .btn-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  .btn-list-item {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+}
+
+// 1200+
+@media screen and (min-width: 1200px) {
+  .btn-list {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+}

@@ -5,12 +5,11 @@
   justify-content: center;
   margin-top: -30px;
   margin-right: -30px;
-
-  .icons-team-list-item {
-    margin-top: 30px;
-    margin-right: 30px;
-    flex-basis: calc((100% - 60px) / 2);
-  }
+}
+.icons-team-list-item {
+  margin-top: 30px;
+  margin-right: 30px;
+  flex-basis: calc((100% - 60px) / 2);
 }
 /* a */
 .icon-team-list-link {
@@ -45,6 +44,9 @@
 
 // 480+
 @media screen and (min-width: 480px) {
+  .icon-team-list-link {
+    width: 210px;
+  }
 }
 
 // 768+
