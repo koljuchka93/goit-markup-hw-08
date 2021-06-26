@@ -728,6 +728,7 @@ body {
   }
   .subscribe .subscribe-input-btn-container {
     display: flex;
+    flex-direction: row;
     align-items: baseline;
   }
   .email-form {
