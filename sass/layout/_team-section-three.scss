@@ -1,13 +1,12 @@
 // 270px where?????
 .team {
   background-color: var(--team-bcrnd-color);
-
-  .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-top: -30px;
-  }
+}
+.team-list {
+  display: block;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-top: -30px;
 }
 .team-list-item {
   margin-right: 30px;
@@ -50,6 +49,12 @@
 
 // 768+
 @media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: -30px;
+  }
   .team-list-item {
     flex-basis: calc((100% - 60px) / 2);
   }

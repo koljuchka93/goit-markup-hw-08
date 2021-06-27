@@ -1,13 +1,12 @@
 .img-gallery {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-top: -30px;
-
-  .img-gallery-card {
-    padding: 24px 20px;
-    box-sizing: border-box;
-  }
+}
+.img-gallery-card {
+  padding: 24px 20px;
+  box-sizing: border-box;
 }
 
 .img-gallery-item {
@@ -77,6 +76,12 @@
 
 // 768+
 @media screen and (min-width: 768px) {
+  .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: -30px;
+  }
   .img-gallery-item {
     flex-basis: calc((100% - 60px) / 2);
   }
